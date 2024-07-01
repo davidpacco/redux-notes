@@ -17,7 +17,7 @@ const generateId = () => Number((Math.random() * 1000000).toFixed())
 
 const noteSlice = createSlice({
   name: 'notes',
-  initialState,
+  initialState: [],
   reducers: {
     createNote(state, action) {
       const content = action.payload
@@ -36,9 +36,15 @@ const noteSlice = createSlice({
       }
       console.log(current(state))
       return state.map(note => note.id === id ? updatedNote : note)
+    },
+    appendNote(state, action) {
+      state.push(action.payload)
+    },
+    setNotes(state, action) {
+      return action.payload
     }
   }
 })
 
-export const { createNote, toggleImportanceOf } = noteSlice.actions
+export const { createNote, toggleImportanceOf, appendNote, setNotes } = noteSlice.actions
 export default noteSlice.reducer
