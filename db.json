@@ -11,18 +11,23 @@
       "id": "2"
     },
     {
-      "id": "f624",
+      "id": "c663",
       "content": "New note #1",
       "important": false
     },
     {
-      "id": "9b84",
+      "id": "07a3",
       "content": "New note #2",
       "important": false
     },
     {
-      "id": "4580",
+      "id": "430e",
       "content": "New note #1",
+      "important": false
+    },
+    {
+      "id": "f02e",
+      "content": "New note #2",
       "important": false
     }
   ]
